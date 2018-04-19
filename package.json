@@ -4,8 +4,13 @@
   "description": "",
   "main": "index.js",
   "dependencies": {
+    "assert": "^1.4.1",
     "cheerio": "^1.0.0-rc.2",
+    "console.table": "^0.10.0",
     "dotenv": "^5.0.1",
+    "mongodb": "^3.0.6",
+    "mongoose": "^5.0.14",
+    "mongoose-findorcreate": "^3.0.0",
     "request": "^2.85.0",
     "request-promise": "^4.2.2"
   },
