@@ -4,6 +4,7 @@ var findOrCreate = require('mongoose-findorcreate')
 
 var CarSchema = new mongoose.Schema({
   id: Number,
+  url: String,
   model: {
     name: String,
     version: String
@@ -14,7 +15,7 @@ var CarSchema = new mongoose.Schema({
     property: { type: mongoose.Schema.ObjectId, ref: 'CarProperty' },
     value: String
   }],
-});
+}, { skipVersioning: { properties: true } });
 
 CarSchema.plugin(findOrCreate);
 
